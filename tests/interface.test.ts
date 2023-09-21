@@ -1,5 +1,5 @@
 import { Employee, Manager } from "../src/employee";
-import { Seller } from "../src/interface";
+import { Person, Seller } from "../src/interface";
 
 describe("Interface", function () {
   it("should be Interface", function () {
@@ -67,11 +67,6 @@ describe("Interface", function () {
   });
 
   it("should support function in interface", function () {
-    interface Person {
-      name: string;
-      sayHello(name: string): string;
-    }
-
     const person: Person = {
       name: "Zainal",
       sayHello: function (name: string): string {
@@ -80,5 +75,35 @@ describe("Interface", function () {
     };
 
     console.info(person.sayHello("Abidin"));
+  });
+
+  it("should support intersection types", function () {
+    interface hasName {
+      name: string;
+    }
+
+    interface hasId {
+      id: string | number;
+    }
+
+    type Domain = hasId & hasName;
+
+    const domain: Domain = {
+      id: "1",
+      name: "zain",
+    };
+
+    console.log(domain);
+  });
+
+  it("should support type assertions", function () {
+    const person: any = {
+      name: "zainal",
+      age: 23,
+    };
+
+    const person2: Person = person as Person;
+
+    console.log("asser", person2);
   });
 });

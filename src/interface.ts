@@ -19,3 +19,8 @@ export interface Seller {
   readonly nib: string;
   readonly npwp: string;
 }
+
+export interface Person {
+  name: string;
+  sayHello(name: string): string;
+}
