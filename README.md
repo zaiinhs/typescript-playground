@@ -1,7 +1,13 @@
 # List learning typescript
 
-- [ ] Data types
-- [ ] Testing
+- [x] Setup Typescript
+- [x] Unit test with [Jest](https://jestjs.io/)
+- [x] Agar jest support JS Module, maka install [Babel](https://babeljs.io/)
 - [x] Union
 - [x] Intersection
+- [x] Ubah JS Module di tsconfig.json
+- [x] Testing with Jest
+- [ ] a
+- [ ] a
+- [ ] a
 
