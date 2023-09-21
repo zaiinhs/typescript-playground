@@ -7,7 +7,6 @@
 - [x] Intersection
 - [x] Ubah JS Module di tsconfig.json
 - [x] Testing with Jest
-- [ ] a
-- [ ] a
-- [ ] a
+- [x] data type
+- [x] array, readonly, and tuple
 
