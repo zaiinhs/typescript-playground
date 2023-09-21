@@ -19,3 +19,15 @@ enum Month {
 }
 
 console.log(Month.JAN);
+
+export enum CustomerType {
+  REG = "REGULAR",
+  GLD = "GOLD",
+  PLAT = "PLATINUM",
+}
+
+export type Customer = {
+  id: number;
+  name: string;
+  type: CustomerType;
+};

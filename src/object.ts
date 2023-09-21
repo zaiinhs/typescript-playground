@@ -1,3 +1,9 @@
+export type TObject = {
+  id: string;
+  name: string;
+  description?: string;
+};
+
 type Data = {
   id: number;
   name: string;
